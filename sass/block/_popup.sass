@@ -1,0 +1,164 @@
+.wrapper-popup
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	// background-color: rgba(0,0,0,.2)
+	z-index: 100
+	overflow: hidden
+
+.popup-container
+	width: 465px
+	padding: 0 80px
+
+.popup-close
+	position: absolute
+	top: 10px
+	right: 10px
+	width: 25px
+	height: 25px
+	cursor: pointer
+
+.popup-close:after, .popup-close:before
+	content: ""
+	position: absolute
+	left: calc(50% - 5px)
+	width: 5px
+	height: 25px
+	background-color: #ee3643
+
+.popup-close:after
+	transform: rotate(45deg)
+
+.popup-close:before
+	transform: rotate(-45deg)	
+
+.popup-write-us
+	position: relative
+	width: 620px
+	min-height: 425px
+	margin: 270px auto 0 auto
+	border-top: 7px solid #ee3643
+	background-color: white
+	font-family: "Cuprum", "Arial", sans-serif
+	font-size: 18px
+	box-shadow: 0 0 70px rgba(0,0,0,.6)
+
+
+.popup-write-us input
+	width: calc(220px - 10px)
+	height: 36px
+	border: 2px solid #d7dcde
+	border-radius: 5px
+	padding-left: 10px
+	outline: none
+
+.popup-write-us input:-moz-placeholder
+	font-family: "PTSans", "Arial", sans-serif
+	font-size: 13px
+
+.popup-write-us input::-webkit-input-placeholder
+	font-family: "PTSans", "Arial", sans-serif
+	font-size: 13px
+
+.wrapper__popup__name-email
+	margin-top: 48px
+	margin-bottom: 22px
+
+.wrapper__popup__name-email:after
+	content: ""
+	display: table
+	width: 100%
+	clear: both
+
+.wrapper__popup__name
+	width: 220px
+	margin-right: 20px
+	float: left
+
+.popup-write-us label
+	display: block
+	margin-bottom: 13px
+
+.popup-write-us textarea
+	width: calc(460px - 15px)
+	height: 112px
+	min-height: 112px
+	padding-left: 15px
+	padding-top: 12px
+	margin: 0 auto
+	margin-bottom: 37px
+	border: 2px solid #d7dcde
+	border-radius: 5px
+	resize: vertical
+	outline: none
+
+.popup-write-us textarea:-moz-placeholder
+	font-family: "PTSans", "Arial", sans-serif
+	font-size: 13px
+
+.popup-write-us textarea::-webkit-input-placeholder
+	font-family: "PTSans", "Arial", sans-serif
+	font-size: 13px
+
+.wrapper__popup__email
+	width: 220px
+	float: left
+
+.popup__btns
+	padding: 37px 0
+	background-color: #f1f1f1
+	font-size: 0
+
+.popup__btn
+	display: inline-block
+	width: 220px
+	padding: 14px 0
+	margin-right: 20px
+	background-color: #ee3643
+	color: white
+	border: none;
+	border-radius: 5px
+	font-family: "PTSans", "Arial", sans-serif
+	font-size: 14px
+	text-transform: uppercase
+	text-decoration: none
+	text-align: center
+	cursor: pointer
+
+
+.popup__btn__cancel
+	padding: 14px 0
+	margin-right: 0
+	background-color: white
+	font-family: "PTSans", "Arial", sans-serif
+	font-size: 14px
+	color: black
+	text-transform: uppercase
+
+
+.popup-cart
+	min-height: 282px
+
+.popup__cart_text
+	position: relative
+	margin-top: 68px
+	margin-bottom: 74px
+	padding-left: 66px
+	font-family: "Cuprum", "Arial", sans-serif
+	font-size: 30px
+	text-align: center
+
+.popup__cart_text:before
+	content: ""
+	position: absolute
+	top: -19px
+	left: 0
+	width: 66px
+	height: 66px
+	background: url(../img/catalog-popup-check-img.png)
+
+
+.popup__btn_cart
+	-webkit-appearance: none	

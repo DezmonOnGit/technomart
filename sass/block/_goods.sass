@@ -7,45 +7,6 @@
 	width: 100%
 	clear: both
 
-.goods__title
-	padding: 25px
-	margin-bottom: 17px
-	background-color: #f7f3ec
-	font-family: "Cuprum", "Arial", sans-serif
-	font-size: 30px
-	color: #32425c
-	text-transform: uppercase
-
-.goods__title:after
-	content: ""
-	display: table
-	width: 100%
-	clear: both	
-
-.goods__title p
-	margin-right: 374px
-	float: left
-	
-
-.goods__title__btn
-	display: block
-	padding: 12px 49px 12px 60px
-	border-radius: 5px
-	background-color: #ee3643
-	font-family: "Cuprum", "Arial", sans-serif
-	font-size: 14px
-	color: white
-	text-align: center
-	text-transform: uppercase
-	text-decoration: none
-	float: left
-
-.goods__title__btn:hover
-	background-color: #ca2c37
-
-.goods__title__btn:active
-	background-color: #ba2732
-
 .goods__item
 	position: relative
 	width: calc(220px - 2px)
@@ -53,6 +14,7 @@
 	margin-right: 20px
 	margin-bottom: 20px
 	border: 1px solid #e5e5e5
+	overflow: hidden
 	float: left
 
 .goods__item:hover
@@ -72,9 +34,81 @@
 
 .goods_item__img img
 	vertical-align: middle
-	
 
-.goods__item p
+.goods__item:hover .goods_item__img
+	padding-top: 45px
+	height: auto
+	margin-bottom: 36px
+
+.goods__item:hover .goods_item__img__btn__buy
+	display: block
+
+.goods__item:hover .goods_item__img__btn__mark
+	display: block
+
+.goods__item:hover .goods_item__img img
+	display: none
+
+.goods_item__img__btn__buy
+	position: relative
+	display: none
+	width: 135px
+	padding-top: 14px
+	padding-bottom: 11px
+	margin: 0 auto
+	font-family: "Cuprum", "Arial", sans-serif
+	font-size: 14px
+	background-color: #63a63e
+	text-align: center
+	text-transform: uppercase
+	text-decoration: none
+	color: white
+	border-bottom: 3px solid #367315
+	border-radius: 3px
+	line-height: 14px
+
+.goods_item__img__btn__buy:hover
+	background-color: #5fbb2d
+
+.goods_item__img__btn__buy:active
+	background-color: #367315
+
+.goods_item__img__btn__buy:before
+	position: absolute
+	top: 13px
+	left: 15px
+	color: #92c178
+
+.goods_item__img__btn__buy:hover:before
+	color: white
+
+.goods_item__img__btn__mark
+	display: none
+	width: 135px
+	padding-top: 14px
+	padding-bottom: 11px
+	margin: 0 auto
+	margin-top: 7px
+	font-family: "Cuprum", "Arial", sans-serif
+	font-size: 14px
+	background-color: white
+	text-align: center
+	text-transform: uppercase
+	text-decoration: none
+	color: #32425c
+	border: 3px solid #63a63e
+	box-sizing: border-box
+	border-radius: 3px
+	line-height: 14px
+
+.goods_item__img__btn__mark:hover
+	border-color: #32425c
+
+.goods_item__img__btn__mark:active
+	border-color: #c1c6ce
+	color: #c1c6ce
+
+.goods__item__name
 	width: 160px
 	margin: 0 auto 10px
 	font-family: "PTSans", "Arial", sans-serif
@@ -85,10 +119,15 @@
 .goods__item span
 	text-transform: uppercase
 
-.goods__item p:nth-child(3)
+.goods__item__old-price
+	margin-bottom: 10px
+	font-family: "PTSans", "Arial", sans-serif
+	font-weight: bold
+	line-height: 18px
 	color: #999
 	text-decoration: line-through
 	text-transform: uppercase
+	text-align: center
 
 .goods__btn
 	position: relative
@@ -134,3 +173,6 @@
 	font-weight: lighter
 	font-size: 16px
 	text-transform: lowercase
+
+.goods__item__name_m-bot
+	margin-bottom: 40px

@@ -146,8 +146,7 @@
 
 .products__filter__manufacturers label
 	position: relative
-	display: block
-	width: calc(180px - 33px)
+	display: inline-block
 	padding-left: 33px
 	font-family: "PTSans", "Arial", sans-serif
 	font-size: 15px
@@ -249,7 +248,11 @@
 	list-style-type: none
 
 .sorting__goods li
+	cursor: pointer
 	float: left
+
+.sorting__goods li:first-child
+	cursor: auto
 
 .sorting__goods__item
 	margin-right: 67px
