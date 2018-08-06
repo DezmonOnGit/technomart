@@ -1780,6 +1780,7 @@ img.mfp-img {
   color: white;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 21px;
+  cursor: pointer;
 }
 
 .tabs__nav__item:hover {
@@ -1787,7 +1788,7 @@ img.mfp-img {
   background-color: #293449;
 }
 
-.tabs__nav__item_active {
+.tabs__nav__item.active {
   color: #32425c;
   background-color: white;
   border: none;
@@ -1800,8 +1801,13 @@ img.mfp-img {
 }
 
 .tabs__content__item {
+  display: none;
   position: relative;
   z-index: 1;
+}
+
+.tabs__content__item.active {
+  display: block;
 }
 
 .tabs__content__item__title {

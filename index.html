@@ -205,14 +205,14 @@
 				<p class="service__title">Сервисы</p>
 				<p class="service_description">Хороший интернет-магазин отличается от плохого не только ценами!
 				   Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-				<div class="tabs">
-					<div class="tabs__nav">
-						<div class="tabs__nav__item tabs__nav__item_active">Доставка</div>
-						<div class="tabs__nav__item">Гарантия</div>
-						<div class="tabs__nav__item">Кредит</div>
+				<div class="tabs tabs__js">
+					<div class="tabs__nav" data-tab="control">
+						<div class="tabs__nav__item tabs__nav__item_active active" data-tabControl="1">Доставка</div>
+						<div class="tabs__nav__item" data-tabControl="2">Гарантия</div>
+						<div class="tabs__nav__item" data-tabControl="3">Кредит</div>
 					</div>
-					<div class="tabs__content">
-						<div class="tabs__content__item">
+					<div class="tabs__content" data-tab="content">
+						<div class="tabs__content__item active" data-tabContent="1">
 							<p class="tabs__content__item__title">Доставка</p>
 							<p class="tabs__content__item__description">Мы с удовольствием доставим ваш товар прямо<br>
 							 к вашему подъезду совершенно бесплатно!<br>
@@ -222,7 +222,7 @@
 							 	<img src="img/tabs-content-img-1.png" width="468" height="260" alt="tabs-content-img-1 is missing">
 							 </div>
 						</div>
-						<div class="tabs__content__item hide">
+						<div class="tabs__content__item" data-tabContent="2">
 							<p class="tabs__content__item__title">Гарантия</p>
 							<p class="tabs__content__item__description">Если купленный у нас товар поломается или заискрит,<br>
 								а также в случае пожара, спровоцированного его возгаранием,<br>
@@ -233,7 +233,7 @@
 							 	<img src="img/tabs-content-img-2.png" width="389" height="283" alt="tabs-content-img-2 is missing">
 							 </div>
 						</div>
-						<div class="tabs__content__item hide">
+						<div class="tabs__content__item" data-tabContent="3">
 							<p class="tabs__content__item__title">Кредит</p>
 							<p class="tabs__content__item__description">Залезть в долговую яму стало проще!<br> 
 								Кредитные консультанты придут вам на помощь.</p>
