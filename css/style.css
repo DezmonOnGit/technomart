@@ -1715,6 +1715,7 @@ img.mfp-img {
   background-color: #f2f6f8;
   padding-top: 62px;
   padding-bottom: 75px;
+  min-height: 450px;
 }
 
 .service:after {
